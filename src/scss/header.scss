@@ -1,0 +1,145 @@
+.header {
+  // .header__container
+  background-color: var(--dark);
+  padding: toRem(38) 0;
+  &__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    @media (max-width: $mobile) {
+    }
+  }
+
+  // .header__body
+
+  &__body {
+    display: flex;
+    gap: toRem(25);
+    color: var(--light);
+    text-transform: uppercase;
+    .menu-open & {
+      margin: 0 auto;
+      color: var(--dark);
+    }
+  }
+
+  // .header__logo
+
+  &__logo {
+    display: block;
+    position: relative;
+    z-index: 5;
+    .menu-open & {
+    }
+  }
+
+  // .header__language
+
+  &__language {
+    width: 27px;
+    height: 27px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: toRem(1) solid var(--light);
+    font-size: toRem(12);
+    border-radius: 50%;
+    margin-top: toRem(5);
+    color: var(--light);
+    cursor: pointer;
+    @media (max-width: $mobile) {
+      border: none;
+      gap: 50px;
+      font-size: toRem(18);
+    }
+  }
+  &__languag {
+    text-transform: uppercase;
+    @media (max-width: $mobile) {
+      text-decoration: underline;
+      & ._language {
+        text-decoration: none;
+      }
+    }
+  }
+
+  // .header__language--ua
+
+  // .header__menu
+
+  &__menu {
+    justify-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  // .header__phone
+
+  &__phone {
+    display: grid;
+    align-items: center;
+  }
+}
+.logo {
+  // .logo__title
+  height: toRem(53);
+  font-size: toRem(39);
+  &__title {
+    font-size: toRem(39);
+    font-weight: 900;
+    & span {
+      color: #fff;
+      @media (max-width: $mobile) {
+        .menu-open & {
+          color: var(--light);
+        }
+      }
+    }
+  }
+
+  // .logo__subtite
+
+  &__subtite {
+    font-size: toRem(8);
+    text-decoration: underline;
+  }
+}
+// .menu__list
+.phone {
+  // .phone__number
+  text-align: right;
+  &__number {
+    font-weight: 700;
+    font-size: 17px;
+    text-align: right;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    color: #fff;
+    &:not(:last-child) {
+      margin-bottom: toRem(8);
+    }
+    @media (max-width: $mobile) {
+      color: var(--dark);
+      display: flex;
+      flex-direction: row-reverse;
+      gap: toRem(20);
+      &:not(:last-child) {
+        margin-bottom: toRem(18);
+      }
+    }
+    & span {
+      font-weight: 400;
+      font-size: 12px;
+      margin-right: toRem(10);
+    }
+  }
+}
+._language {
+  display: none;
+  @media (max-width: $mobile) {
+    display: flex;
+    text-decoration: none;
+  }
+}
