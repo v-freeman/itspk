@@ -1,3 +1,5 @@
 {
-  "files.autoSave": "onFocusChange"
+  "files.autoSave": "onFocusChange",
+  "editor.find.cursorMoveOnType": false,
+  "workbench.activityBar.location": "default"
 }
