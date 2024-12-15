@@ -1,7 +1,8 @@
 .header {
   // .header__container
-  background-color: var(--dark);
+  position: sticky;
   padding: toRem(38) 0;
+  z-index: 50;
   &__container {
     display: flex;
     justify-content: space-between;

@@ -6,7 +6,7 @@
 @import "base/menu";
 
 // Стилі попапів
-// @import "base/popup";
+@import "base/popup";
 
 // Стилі спойлерів
 // @import "base/spollers";
@@ -41,6 +41,9 @@
 .ibg {
   width: 100%;
   height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
   object-fit: cover;
   &--top {
     object-position: top;
