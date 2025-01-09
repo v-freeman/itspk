@@ -2,5 +2,5 @@
 .title {
 	color: var(--dark);
 	font-weight: 700;
-	@include adaptiveValue("font-size", 50, 36);
+	@include adaptiveValue("font-size", 50, 35);
 }
