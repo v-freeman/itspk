@@ -132,13 +132,10 @@
 		"prefix": "gc",
 		"body": "@include gridContainer();",
 		"description": "Додає грід-контейнер"
-	},
-	"Adaptiv Value": {
-		"scope": "scss",
+
 		"prefix": "av",
 		"body": [
 			"@include adaptiveValue(\"${1:font-size}\", $2, $3);"
-		],
 		"description": "Адаптивна властивість (clamp): CSS-властивість, початкове значення, кінцеве значення, ширина початкова, ширина кінцева"
 	},
 	"EM": {
