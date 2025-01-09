@@ -1,43 +1,123 @@
 //====================================================================================================
 .hero {
   // .hero__container
+  padding-top: toRem(155);
+  filter: blur(0.5px);
+  padding-bottom: toRem(70);
 
   &__container {
+    position: relative;
+    z-index: 2;
   }
 
   // .hero__title
 
   &__title {
+    color: #00feff;
+    font-size: toRem(50);
+    font-weight: 900;
+    max-width: toRem(568);
+    line-height: 110%;
+    /* 55px */
+    margin-bottom: toRem(57);
+
+    @media (max-width: $mobile) {
+      font-size: toRem(40);
+    }
   }
 
   // .hero__subtitle
 
   &__subtitle {
+    color: #00feff;
+    font-size: toRem(18);
+    font-weight: 900;
+    line-height: 103.316%;
+    /* 18.597px */
+    margin-bottom: toRem(17);
   }
 
   // .hero__price
 
   &__price {
+    color: #fff;
+    font-size: 24px;
+    line-height: 140%;
+    /* 33.6px */
+    max-width: toRem(240);
+    margin-bottom: toRem(28);
+
+    & span {
+      font-weight: 700;
+    }
   }
 
   // .hero__big
 
   &__big {
+    font-size: toRem(36);
   }
 
   // .hero__bottom
 
   &__bottom {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+      gap: toRem(37);
+    }
   }
 
   // .hero__text
 
   &__text {
+    color: #fff;
+    text-align: right;
+    font-size: toRem(14);
+    line-height: 140%;
+    /* 19.6px */
+
+    @include adaptiveValue("width", 400, 300, 2, 900, 765);
+
+    @media (max-width: $mobile) {
+      width: 100%;
+    }
   }
 }
+
 .link__popup {
+  color: #002047;
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.7px;
+  text-transform: uppercase;
+  padding: toRem(15) toRem(21) toRem(15) toRem(22);
+  background-color: var(--light);
+  position: relative;
+  max-width: toRem(253);
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: center;
+  flex-wrap: nowrap;
+
+  @media (any-hover: hover) {
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+
+  gap: toRem(15);
+
+  &::before {
+    content: "";
+    background: url("@img/icons/arrow_r.svg") 0 0 no-repeat;
+    width: toRem(21);
+    height: toRem(15);
+  }
+
+  &:not(:last-child) {}
 }
 
 //====================================================================================================
-/*background: linear-gradient(0deg, rgba(1, 53, 113, 0.25) 0%, rgba(1, 53, 113, 0.25) 100%), url()) lightgray 50% / cover no-repeat;
-filter: blur(0.5px);*/

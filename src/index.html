@@ -1,33 +1,42 @@
 <!doctype html>
 <html lang="ru">
-  @@include('html/_head.htm',{ "title":"HomePage" })
-  <body>
-    <div class="wrapper">
-      @@include('html/_popup.htm',{}) @@include('html/_header.htm',{})
-      <main class="page">
-        <section class="hero">
-          <img class="hero__image ibg" src="@img/header.jpg" alt="Image" />
-          <div class="hero__container">
-            <h1 class="hero__title">IT-Аутсорсинг компаниям в Киеве</h1>
-            <p class="hero__subtitle">Обслуживание компьютеров в Киеве</p>
-            <p class="hero__price">
-              От <span class="hero__big">315</span><span>грн</span>/месза 1
-              рабочее место
+@@include('html/_head.htm',{ "title":"IT-Аутсорсинг компаниям в Киеве" })
+
+<body>
+  <div class="wrapper">
+    @@include('html/_popup.htm',{}) @@include('html/_header.htm',{})
+    <main class="page">
+      <section class="hero">
+        <div class="hero__container">
+          <h1 class="hero__title">IT-Аутсорсинг компаниям в Киеве</h1>
+          <p class="hero__subtitle">Обслуживание компьютеров в Киеве</p>
+          <p class="hero__price">
+            От <span class="hero__big">315</span><span>грн</span>/мес за 1
+            рабочее место
+          </p>
+          <div class="hero__bottom">
+            <a href="#" data-popup="#popup" class="link__popup">Отправить заявку</a>
+            <p class="hero__text">
+              Мы знаем как сложно найти хорошую компанию по обслуживанию
+              компьютеров в Киеве. Исправим это!
             </p>
-            <div class="hero__bottom">
-              <a href="#" data-popup="#popup" class="link__popup"
-                >Я відкриваю попап</a
-              >
-              <p class="hero__text">
-                Мы знаем как сложно найти хорошую компанию по обслуживанию
-                компьютеров в Киеве. Исправим это!
-              </p>
-            </div>
           </div>
-        </section>
-      </main>
-      @@include('html/_footer.htm',{})
-    </div>
-    @@include('html/_js.htm',{})
-  </body>
+        </div>
+        <img class="hero__image ibg" src="@img/header.jpg" alt="Image" />
+      </section>
+      <section class="about">
+        <div class="about__container">
+          <h3 class="about__title title">О нас</h3>
+          <!-- /.about__title title -->
+          <p class="about__text">IT-SPK - сервисная компания по обслуживанию АйТи инфраструктуры для бизнеса. Мы небольшая команда фанатов своего дела c многолетним опытом работы. Решаем любые ИТ задачи в Киеве: проектирование, монтаж и поддержка ИТ инфраструктуры, настройка и поддержка серверов, виртуализация, обслуживание компьютеров, поддержка пользователей.</p>
+          <!-- /.about__text -->
+        </div>
+        <!-- /.about__container -->
+      </section>
+    </main>
+    @@include('html/_footer.htm',{})
+  </div>
+  @@include('html/_js.htm',{})
+</body>
+
 </html>

@@ -824,14 +824,6 @@
 		],
 		"description": "bg+"
 	},
-	"bg+": {
-		"scope": "css",
-		"prefix": "bg+",
-		"body": [
-			"background: url('../img$0') 0 0 no-repeat;"
-		],
-		"description": "bg+"
-	},
 	"md1": {
 		"prefix": "md1",
 		"body": [
