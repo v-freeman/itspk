@@ -1,17 +1,19 @@
 .header {
-  // .header__container
-  position: fixed;
+
+  position: absolute;
   top: 0;
   left: 0;
   width: 100%;
   padding: toRem(38) 0;
   z-index: 50;
+
+  // .header__container
   &__container {
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-    @media (max-width: $mobile) {
-    }
+
+    @media (max-width: $mobile) {}
   }
 
   // .header__body
@@ -21,6 +23,7 @@
     gap: toRem(25);
     color: var(--light);
     text-transform: uppercase;
+
     .menu-open & {
       margin: 0 auto;
       color: var(--dark);
@@ -33,8 +36,8 @@
     display: block;
     position: relative;
     z-index: 5;
-    .menu-open & {
-    }
+
+    .menu-open & {}
   }
 
   // .header__language
@@ -51,16 +54,20 @@
     margin-top: toRem(5);
     color: var(--light);
     cursor: pointer;
+
     @media (max-width: $mobile) {
       border: none;
       gap: 50px;
       font-size: toRem(18);
     }
   }
+
   &__languag {
     text-transform: uppercase;
+
     @media (max-width: $mobile) {
       text-decoration: underline;
+
       & ._language {
         text-decoration: none;
       }
@@ -85,15 +92,19 @@
     align-items: center;
   }
 }
+
 .logo {
   // .logo__title
   height: toRem(53);
   font-size: toRem(39);
+
   &__title {
     font-size: toRem(39);
     font-weight: 900;
+
     & span {
       color: #fff;
+
       @media (max-width: $mobile) {
         .menu-open & {
           color: var(--light);
@@ -109,10 +120,12 @@
     text-decoration: underline;
   }
 }
+
 // .menu__list
 .phone {
   // .phone__number
   text-align: right;
+
   &__number {
     font-weight: 700;
     font-size: 17px;
@@ -121,18 +134,22 @@
     align-items: center;
     justify-content: flex-end;
     color: #fff;
+
     &:not(:last-child) {
       margin-bottom: toRem(8);
     }
+
     @media (max-width: $mobile) {
       color: var(--dark);
       display: flex;
       flex-direction: row-reverse;
       gap: toRem(20);
+
       &:not(:last-child) {
         margin-bottom: toRem(18);
       }
     }
+
     & span {
       font-weight: 400;
       font-size: 12px;
@@ -140,8 +157,10 @@
     }
   }
 }
+
 ._language {
   display: none;
+
   @media (max-width: $mobile) {
     display: flex;
     text-decoration: none;

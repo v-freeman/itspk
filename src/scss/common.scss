@@ -1,1 +1,6 @@
 // Заголовки, загальні БЕМ блоки та інше...
+.title {
+	color: var(--dark);
+	font-weight: 700;
+	@include adaptiveValue("font-size", 50, 36);
+}
