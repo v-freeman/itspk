@@ -121,12 +121,34 @@
 
 //====================================================================================================
 .about {
+  margin-bottom: toRem(60);
+  margin-top: toRem(95);
+
+  @media (max-width: $mobile) {
+    margin-top: toRem(30);
+    margin-bottom: toRem(30);
+
+  }
 
   /* .about__container */
-  &__container {}
+  &__container {
+    display: flex;
+    gap: toRem(20);
+    justify-content: space-between;
+
+    @media (max-width: $mobile) {
+      flex-direction: column;
+    }
+  }
 
   /* .about__title */
-  &__title {}
+  &__title {
+    flex: 1 0 toRem(170);
+
+    @media (max-width: $mobile) {
+      flex: 1 0 toRem(10);
+    }
+  }
 
   /* .about__text */
   &__text {
