@@ -4,3 +4,11 @@
 	font-weight: 700;
 	@include adaptiveValue("font-size", 50, 35);
 }
+
+.subtitle {
+	color: var(--dark);
+	@include adaptiveValue("font-size", 24, 22);
+	font-weight: 700;
+	line-height: normal;
+	margin-bottom: toRem(32);
+}
